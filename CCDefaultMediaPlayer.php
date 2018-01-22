@@ -1,8 +1,7 @@
 <?php
 
 // Make it really easy to play videos by providing functions for the Chromecast Default Media Player
-
-require_once("CCBaseSender.php");
+namespace ChrisRidings\ChromeCast;
 
 class CCDefaultMediaPlayer extends CCBaseSender
 {

@@ -2,6 +2,8 @@
 
 // Class to represent a protobuf object for a command.
 
+namespace ChrisRidings\ChromeCast;
+
 class CastMessage {
 
 	public $protocolversion = 0; // CASTV2_1_0 - It's always this

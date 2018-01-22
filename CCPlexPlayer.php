@@ -3,7 +3,7 @@
 // Make it really easy to play videos by providing functions for the Plex Default Media Player
 // Based off the CCDefaultMediaPlayer (as they seem to share functions
 
-require_once("CCBaseSender.php");
+namespace ChrisRidings\ChromeCast;
 
 class CCPlexPlayer extends CCBaseSender
 {

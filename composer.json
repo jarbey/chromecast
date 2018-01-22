@@ -1,0 +1,16 @@
+{
+  "name": "chrisridings/chromecast",
+  "type": "library",
+  "description": "ChrisRidings chromecast player",
+  "homepage": "https://github.com/ChrisRidings/CastV2inPHP",
+  "authors": [
+  ],
+  "require": {
+    "php": "^5.5 || ^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ChrisRidings\\ChromeCast\\": "src"
+    }
+  }
+}

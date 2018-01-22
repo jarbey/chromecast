@@ -1,6 +1,7 @@
 <?php
 
 // Base class to extend to provide functionality for different receivers
+namespace ChrisRidings\ChromeCast;
 
 class CCBaseSender {
 	
