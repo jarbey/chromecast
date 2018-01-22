@@ -2,6 +2,19 @@
 
 Functions to control a Chromecast with PHP using a reverse engineered Castv2 protocol. Provides ability to control a Chromecast either locally or remotely from a server.
 
+## Loading package with Composer
+Add the repo to your composer file (did not have any time to register it) 
+```
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:stef-w/CastV2inPHP.git"
+    }
+  ]
+```
+Load it by running: `composer require chrisridings/chromecast:dev-master`
+
+
 ## Code Example
 
 Custom Receiver - Launch App
