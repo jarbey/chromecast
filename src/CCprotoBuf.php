@@ -2,7 +2,7 @@
 
 // Class to represent a protobuf object for a command.
 
-namespace ChrisRidings\ChromeCast;
+namespace StefW\ChromeCast;
 
 class CastMessage {
 

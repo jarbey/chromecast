@@ -1,7 +1,7 @@
 <?php
 // Chris Ridings
 // www.chrisridings.com
-namespace ChrisRidings\ChromeCast;
+namespace StefW\ChromeCast;
 
 class Chromecast
 {
