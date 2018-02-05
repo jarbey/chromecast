@@ -7,11 +7,22 @@ class CCDefaultMediaPlayer extends CCBaseSender
 {
 	public $appid="CC1AD845";
 	
-	public function play($url,$streamType,$contentType,$autoPlay,$currentTime) {
-		// Start a playing
+	public function play($url,$streamType = "BUFFERED",$contentType = 'video/mp4',$autoPlay = true,$currentTime = 0) {
+	    // Start a playing
 		// First ensure there's an instance of the DMP running
 		$this->launch();
-		$json = '{"type":"LOAD","media":{"contentId":"' . $url . '","streamType":"' . $streamType . '","contentType":"' . $contentType . '"},"autoplay":' . $autoPlay . ',"currentTime":' . $currentTime . ',"requestId":921489134}';
+		$message = [
+		    'requestId' => '921489134',
+            'type' => 'LOAD',
+            'autoPlay' => true,
+            'currentTime' => 0,
+            'media' => [
+                'contentId' => $url,
+                'streamType' => $streamType,
+                'contentType' => $contentType
+            ]
+        ];
+		$json = json_encode($message);
 		$this->chromecast->sendMessage("urn:x-cast:com.google.cast.media", $json);
 		$r = "";
 		while (!preg_match("/\"playerState\":\"PLAYING\"/",$r)) {
