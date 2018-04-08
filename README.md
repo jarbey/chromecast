@@ -8,7 +8,7 @@ Add the repo to your composer file (did not have any time to register it)
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@github.com:jarbey/CastV2inPHP.git"
+      "url": "git@github.com:jarbey/chromecast.git"
     }
   ]
 ```
